@@ -67,46 +67,63 @@ button1.textContent = siteContent.cta.button
 const snippet = document.getElementById("cta-img")
 snippet.setAttribute('src', 'img/header-img.png')
 
-const featuresTitle = document.querySelector(".text-content h4")
+document.querySelector(".container .main-content .top-content .text-content").className = 'features-content'
+
+const featuresTitle = document.querySelector(".features-content h4")
 featuresTitle.textContent = siteContent["main-content"]["features-h4"]
 
-const featuresAbout = document.querySelector(".text-content p")
+const featuresAbout = document.querySelector(".features-content p")
 featuresAbout.textContent = siteContent["main-content"]["features-content"]
 
 
-const aboutTitle = document.querySelector(".text-content1 h4")
-aboutTitle.textContent = siteContent["main-content"]["about-h4"]
+const aboutTitle = document.querySelector(".text-content h4")
+ aboutTitle.textContent = siteContent["main-content"]["about-h4"]
  
-const aboutContent = document.querySelector(".text-content1 p")
-console.log(aboutContent)
+ const aboutContent = document.querySelector(".text-content p")
+// console.log(aboutContent)
 aboutContent.textContent = siteContent["main-content"]["about-content"]
+
+
 
 const accent = document.getElementById("middle-img")
 accent.setAttribute('src', 'img/mid-page-accent.jpg')
 
-const servicesTitle = document.querySelector(".text-content2 h4")
-servicesTitle.textContent = siteContent["main-content"]["services-h4"]
+document.querySelector(".container .main-content .bottom-content .text-content").className = 'services-content'
 
-const servicesAbout = document.querySelector(".text-content2 p")
-servicesAbout.textContent = siteContent["main-content"]["services-content"]
+ const servicesTitle = document.querySelector(".services-content h4")
+ servicesTitle.textContent = siteContent["main-content"]["services-h4"]
 
-const productTitle = document.querySelector(".text-content3 h4")
-productTitle.textContent = siteContent["main-content"]["product-h4"]
+ const servicesAbout = document.querySelector(".services-content p")
+ servicesAbout.textContent = siteContent["main-content"]["services-content"]
 
-const productAbout = document.querySelector(".text-content3 p")
+ document.querySelector(".container .main-content .bottom-content .text-content").className = 'product-content'
+
+ const productTitle = document.querySelector(".product-content h4")
+ productTitle.textContent = siteContent["main-content"]["product-h4"]
+
+const productAbout = document.querySelector(".product-content p")
 productAbout.textContent = siteContent["main-content"]["product-content"]
 
-const visionTitle = document.querySelector(".text-content4 h4")
+
+document.querySelector(".container .main-content .bottom-content .text-content").className = 'vision-content'
+
+const visionTitle = document.querySelector(".vision-content h4")
 visionTitle.textContent = siteContent["main-content"]["vision-h4"]
 
-const visionAbout = document.querySelector(".text-content4 p")
+const visionAbout = document.querySelector(".vision-content p")
 visionAbout.textContent = siteContent["main-content"]["vision-content"]
 
 const bottomContact = document.querySelector(".contact h4")
 bottomContact.textContent = siteContent.contact["contact-h4"]
 
+document.querySelector(".container .contact p").className 
+
+
 const contactAddress = document.querySelector(".contact p")
 contactAddress.textContent = siteContent.contact.address
+
+document.querySelector(".container .contact p").className = 'phone'
+
 
 const contactPhone = document.querySelector(".contact .p1")
 contactPhone.textContent = siteContent.contact.phone
