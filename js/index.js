@@ -49,6 +49,13 @@ navItems[3].textContent = 'features'
 navItems[4].textContent = 'about'
 navItems[5].textContent = 'contact'
 
+navItems.forEach(element => {
+  element.style.color = 'green';
+});
+
+// var help = document.createElement('help')
+// navItems.prepend(help)
+
  const domAwesomeness = document.querySelector('.cta-text h1')
 //console.log(domAwesomeness)
 domAwesomeness.textContent = siteContent.cta.h1
@@ -95,10 +102,6 @@ visionTitle.textContent = siteContent["main-content"]["vision-h4"]
 const visionAbout = document.querySelector(".text-content4 p")
 visionAbout.textContent = siteContent["main-content"]["vision-content"]
 
-
-
-
-
 const bottomContact = document.querySelector(".contact h4")
 bottomContact.textContent = siteContent.contact["contact-h4"]
 
@@ -114,4 +117,6 @@ contactEmail.textContent = siteContent.contact.email
 
 const copyright = document.querySelector("footer p")
 copyright.textContent = siteContent.footer.copyright
+
+
 
