@@ -116,19 +116,22 @@ visionAbout.textContent = siteContent["main-content"]["vision-content"]
 const bottomContact = document.querySelector(".contact h4")
 bottomContact.textContent = siteContent.contact["contact-h4"]
 
-document.querySelector(".container .contact p").className 
+document.querySelectorAll(".container .contact p").className = 'p'
 
 
 const contactAddress = document.querySelector(".contact p")
 contactAddress.textContent = siteContent.contact.address
 
-document.querySelector(".container .contact p").className = 'phone'
+const contactItem = document.querySelector(".container .contact p")
+contactItem.forEach(element => {
+  element.className += 'p1' , 'p2', 'p3';
+});
 
 
-const contactPhone = document.querySelector(".contact .p1")
+const contactPhone = document.querySelector(".contact p1")
 contactPhone.textContent = siteContent.contact.phone
 
-const contactEmail = document.querySelector(".contact .p2")
+const contactEmail = document.querySelector(".contact p2")
 contactEmail.textContent = siteContent.contact.email
 
 
